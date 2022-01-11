@@ -1,0 +1,140 @@
+/*Top Buttons and Aboutme Page*/
+
+.left{  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.nav-link-wrapper{
+    height: 25px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black; !important;
+}
+
+/*about-me Section*/
+
+.go-back{
+    font-size: 30px;
+    text-align: center;
+    height: 30px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.go-back a{
+    color: #774949;
+    text-decoration: none;
+    transition: color 0.5s
+}
+
+.go-back:hover{
+    border-bottom: 2px solid black;
+}
+
+.go-back a:hover{
+    color: black;
+}
+
+.about-pg{
+    background-color:darkorange;
+    position: absolute;
+    text-align: center;
+    font-size: 32px;
+    font-family: cursive;
+}
+
+.about-me{
+    position: absolute;
+    top: 11%;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.my-face{
+    position: relative;
+    width: 100%;
+    left: 1650px;
+    top: 0px;
+}
+
+/* Portfolio Links*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+  
+.portfolio-item-wrapper {
+    position: relative;
+}
+  
+  .portfolio-img-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+}
+  
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 165px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    font-size: 125%;
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+}
